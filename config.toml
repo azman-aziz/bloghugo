@@ -1,0 +1,12 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Subhitech Site"
+theme = "subhi"
+summaryLength = 10
+paginate = 2
+
+[params]
+    Description = " tempat belajar yang ramah untuk pemula "
+
+[permalinks]
+    posts = "/:slug"

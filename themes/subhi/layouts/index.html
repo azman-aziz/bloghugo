@@ -1,0 +1,19 @@
+{{ define "main"  }}
+
+<h1>{{.Title}}</h1>
+
+
+<h2>Daftar Konten</h2>
+<ul>
+    {{range .Site.RegularPages}}
+    {{/*range where .Site.RegularPages "Section" "blog"*/}}
+    <li>
+        <a href="{{.Permalink}}">{{.Title}}</a>
+        <p>{{or .Params.description .Summary}}</p>
+        <span>Dibuat {{.Date.Format "2021-06-02"}}</span>
+    </li>
+    {{end}}
+</ul>
+
+{{ end }}
+
